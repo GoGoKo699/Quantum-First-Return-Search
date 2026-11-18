@@ -330,7 +330,7 @@ The first 12 milestones build the access model, the idea of clean quantum work r
 
 **Central question.** How can the number of forward steps carry independent information?
 
-**Understanding target.** Follow a parity bit transported through a sequence of layers. Then describe the wider search construction, where a permutation at each layer routes a label and a swap on the backward path from the target changes the desired output.
+**Understanding target.** Follow a parity bit transported through a sequence of layers. Then describe the wider search construction, where each layer routes labels by a cycle. Explain how rotating a suffix of one cycle changes the predecessor of the label determined by the layers beyond it, and therefore changes the final answer.
 
 **Prerequisites.** [M01](#m01-a-permutation-as-reversible-motion), [M09](#m09-the-induced-checkpoint-permutation), [M11](#m11-comparing-nearby-oracles), [M20](#m20-charging-the-two-passes).
 
@@ -342,11 +342,11 @@ The first 12 milestones build the access model, the idea of clean quantum work r
 
 **Central question.** Which amplitudes govern the progress on a layered oracle pair?
 
-**Understanding target.** Use the relative transposition to locate the two input labels that can change the overlap. Contrast the number of all allowed swaps across layers with the number of swaps touching any specified query label.
+**Understanding target.** Locate the three input labels moved by the relative three-cycle. Explain how bounding the largest eigenvalue of the displacement controls overlap loss. Show why the displacement splits by the queried layer, while the initial overlap weight grows with the number of layers.
 
 **Prerequisites.** [M02](#m02-forward-coherent-access), [M11](#m11-comparing-nearby-oracles), [M26](#m26-the-classical-splice-comparison), [M27](#m27-parities-and-layers).
 
-**Conceptual connection.** This counting makes the one-sided forward-query bound match the compiler-based search order when the ambient space can hold all the layers.
+**Conceptual connection.** The largest-eigenvalue bound uses the sign of the predecessor block. The resulting one-sided query bound matches the compiler-based search order when the ambient space can hold all the layers.
 
 **Canonical sources.** [Lower bounds](../science/lower-bounds.md) · [Childs bridge](CHILDS_BRIDGE.md)
 
