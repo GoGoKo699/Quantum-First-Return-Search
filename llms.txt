@@ -1,0 +1,15 @@
+# Quantum First Return Search
+
+> Exact coherent first-return permutation compilation and tight forward-only query bounds for checkpoint predecessor search.
+
+- [Project overview](README.md): question, guarantees, assumptions, and command.
+- [Scientific account](science/README.md): dependency and proof routes.
+- [Model](science/model.md): forward in-place oracle, checkpoint set, return cap, and charged gates.
+- [Unequal-return example](science/example.md): two traversals on a three-checkpoint cycle.
+- [Exact compiler](science/compiler.md): reversible timing, coherent control, and workspace cleanup.
+- [Search](science/search.md): amplitude recurrence and immediate predecessor membership.
+- [Lower bounds](science/lower-bounds.md): layered adversary, matched classical access, decision and compiler bounds.
+- [Related work](references/related-work.md): inherited and new contributions, scope of the open conjecture.
+- [Childs bridge](learning/CHILDS_BRIDGE.md): one verified educational source.
+- [Milestone map](learning/MILESTONES.md): 30 linked understanding targets.
+- [Reproduction](verification/README.md): finite checks and their scope.
