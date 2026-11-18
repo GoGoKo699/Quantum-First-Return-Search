@@ -16,7 +16,7 @@ Let $`Q_+`$ apply a fixed unknown permutation of $`M`$ labels in place. A known 
 | Find the previous checkpoint of $`y\in S`$ | $`\Theta(L\sqrt N)`$ | $`\Theta(LN)`$ |
 | Decide whether the immediate predecessor of $`y\in S`$ is in $`S`$, with $`L=2`$ | $`\Theta(\sqrt N)`$ | $`\Theta(N)`$ |
 
-The search upper bound holds throughout the promise. Matching search lower bounds are realized when $`M\ge LN`$ and $`N\ge3`$. The decision lower bounds use $`M\ge2N`$. Reversible checkpoint membership, uniform-state preparation and reflection have separate gate costs. [Model and resources](science/model.md)
+The search upper bound holds throughout the promise. Matching search lower bounds are realized when $`M\ge LN`$ and $`N\ge2`$. The decision lower bounds use $`M\ge2N`$. Reversible checkpoint membership, uniform-state preparation and reflection have separate gate costs. [Model and resources](science/model.md)
 
 ## How the clock disappears
 
