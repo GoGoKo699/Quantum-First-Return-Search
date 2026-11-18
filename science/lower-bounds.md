@@ -20,7 +20,7 @@ Any extra labels are fixed points. Define $`a_L=y`$ and $`a_j=p_j^{-1}(a_{j+1})`
 
 The one-layer argument uses Belovs and Yolcu’s cyclic-rotation relation, Lemma 10.4 and Claims 10.5–10.6. For the first-return problem, we combine those relations using a target that depends on the later layers. [Primary source](https://arxiv.org/pdf/2301.02003) · [Related work](../references/related-work.md)
 
-Write a cycle from its fixed inversion target $`b`$ as $`(v_1=b,v_2,\ldots,v_N)`$. Choose $`1\le k<\ell<N`$ and replace its suffix after $`v_k`$ by the rotation
+Write a cycle from its fixed inversion target $`b`$ as $`(v_1=b,v_2,\ldots,v_N)`$. Choose $`1\le k\lt \ell\lt N`$ and replace its suffix after $`v_k`$ by the rotation
 
 ```math
 (v_{\ell+1},\ldots,v_N,v_{k+1},\ldots,v_\ell).
@@ -34,11 +34,11 @@ A+(N-2)I=\sum_{k=1}^{N-2}E_k\succeq 0.
 
 For neighbors $`p,q`$ and their permutation matrices $`P_p,P_q`$, the matrix $`I-P_p^\dagger P_q`$ is supported on $`v_k,v_\ell,v_N`$. The relative permutation maps $`v_k\mapsto v_\ell\mapsto v_N\mapsto v_k`$. In the block matrix $`D_b=[A_{pq}(I-P_p^\dagger P_q)]_{p,q}`$, isolate the entry from row $`(p,v_N)`$ to column $`(q,v_\ell)`$ in each such block. These entries comprise $`-J A J^\dagger`$, where $`J|p\rangle=|p,p^{-1}(b)\rangle`$ is an isometry. Their maximum eigenvalue is at most $`N-2`$.
 
-In the remaining matrix $`B`$, each nonzero has a row or column indexed by a label other than that cycle's predecessor of $`b`$. For any such label, to be in a nonzero row or column it must be one of the two cuts $`v_k,v_\ell`$. It is a cut for at most $`2N`$ rotations, each contributing at most two entries. Consequently a non-predecessor row or column has at most $`4N`$ entries, and any row or column has at most $`2d`$ entries. For a matrix of entries having magnitude at most one, the operator norm is bounded by the maximum of $`\sqrt{r_i c_j}`$ over its nonzero positions, where $`r_i,c_j`$ count nonzeros in their row and column. This follows from the Schur test with row and column weights $`\sqrt{r_i}`$ and $`\sqrt{c_j}`$. Therefore
+In the remaining matrix $`B`$, each nonzero has a row or column indexed by a label other than that cycle's predecessor of $`b`$. For any such label, to be in a nonzero row or column it must be one of the two cuts $`v_k,v_\ell`$. It is a cut for at most $`2N`$ rotations, each contributing at most two entries. Consequently a non-predecessor row or column has at most $`4N`$ entries, and any row or column has at most $`2d`$ entries. For a matrix of entries having magnitude at most one, the operator norm is bounded by the maximum of $`\sqrt{r_i c_j}`$ over its nonzero positions, where $`r_i,c_j`$ count nonzeros in their row and column. This follows from the Schur test with row and column weights $`\sqrt{r_i}`$ and $`\sqrt{c_j}`$. Write norm for the operator norm. Then
 
 ```math
 \lambda_{\max}(D_b)
-\le \|B\|+\lambda_{\max}(-J A J^\dagger)
+\le \operatorname{norm}(B)+\lambda_{\max}(-J A J^\dagger)
 \le \sqrt{8Nd}+N-2.
 ```
 
